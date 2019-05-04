@@ -1,0 +1,1044 @@
+{
+  "@timestamp": {
+    "type": "date"
+  },
+  "@version": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "AssessTot": {
+    "type": "long"
+  },
+  "BldgArea": {
+    "type": "long"
+  },
+  "BldgClass": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "BldgDepth": {
+    "type": "long"
+  },
+  "BldgFront": {
+    "type": "float"
+  },
+  "ComArea": {
+    "type": "long"
+  },
+  "CondoNo": {
+    "type": "long"
+  },
+  "LandUse": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "LotArea": {
+    "type": "long"
+  },
+  "LotDepth": {
+    "type": "long"
+  },
+  "LotFront": {
+    "type": "float"
+  },
+  "NumFloors": {
+    "type": "long"
+  },
+  "OfficeArea": {
+    "type": "long"
+  },
+  "OwnerType": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "ResArea": {
+    "type": "long"
+  },
+  "RetailArea": {
+    "type": "long"
+  },
+  "StrgeArea": {
+    "type": "long"
+  },
+  "UnitsRes": {
+    "type": "long"
+  },
+  "address": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "addressEntityId": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "addressId": {
+    "type": "long"
+  },
+  "agent1Name": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "agent1email": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "agent1phone": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "agent1pic": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "agent2Name": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "agent2email": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "agent2phone": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "agent2pic": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "airConditioning": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "alternates": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "annualPsf": {
+    "type": "long"
+  },
+  "annual_rent_psf": {
+    "type": "float"
+  },
+  "apartment": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "apartmentEntityId": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "apartmentId": {
+    "type": "long"
+  },
+  "apartmentType": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "approx": {
+    "type": "float"
+  },
+  "arbitrage": {
+    "type": "float"
+  },
+  "arbitrage_score": {
+    "type": "float"
+  },
+  "available": {
+    "type": "date"
+  },
+  "baths": {
+    "type": "float"
+  },
+  "beds": {
+    "type": "long"
+  },
+  "bld_price_deviation": {
+    "type": "float"
+  },
+  "bld_psf_deviation": {
+    "type": "float"
+  },
+  "bld_size_deviation": {
+    "type": "float"
+  },
+  "bld_upper_price_deviation": {
+    "type": "float"
+  },
+  "bld_upper_psf_deviation": {
+    "type": "float"
+  },
+  "bld_upper_size_deviation": {
+    "type": "float"
+  },
+  "bldg_depth_score": {
+    "type": "float"
+  },
+  "bldg_front_score": {
+    "type": "float"
+  },
+  "block": {
+    "type": "long"
+  },
+  "boroughId": {
+    "type": "long"
+  },
+  "boroughName": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "buildingClass": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "buildingEntityId": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "buildingId": {
+    "type": "long"
+  },
+  "buildingOutdoor": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "cap_rate": {
+    "type": "float"
+  },
+  "cap_rate_score": {
+    "type": "float"
+  },
+  "city": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "cityId": {
+    "type": "long"
+  },
+  "cityView": {
+    "type": "boolean"
+  },
+  "classCategory": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "common_charges": {
+    "type": "long"
+  },
+  "companyId": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "companyName": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "convertible_bed_size": {
+    "type": "boolean"
+  },
+  "convertible_bed_size_score": {
+    "type": "float"
+  },
+  "daysOnMarket": {
+    "type": "long"
+  },
+  "description": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "developmentStatus": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "deviation_from_last_sold_in_line": {
+    "type": "float"
+  },
+  "deviation_from_last_sold_in_line_score": {
+    "type": "float"
+  },
+  "discount_present": {
+    "type": "boolean"
+  },
+  "displayData": {
+    "properties": {
+      "NumFloors": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "baths": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "beds": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "daysOnMarket": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "lobby": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "maintenance": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "price": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "pricePerSize": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "size": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "tax": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "unitsTotal": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      }
+    }
+  },
+  "dom_score": {
+    "type": "float"
+  },
+  "elevator": {
+    "type": "boolean"
+  },
+  "elevator_score": {
+    "type": "float"
+  },
+  "entityId": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "fee": {
+    "type": "boolean"
+  },
+  "finance": {
+    "type": "long"
+  },
+  "fireplace": {
+    "type": "boolean"
+  },
+  "firstactiondate": {
+    "type": "date"
+  },
+  "floor": {
+    "type": "long"
+  },
+  "floorType": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "floors": {
+    "type": "long"
+  },
+  "furnished": {
+    "type": "boolean"
+  },
+  "garage": {
+    "type": "boolean"
+  },
+  "garage_score": {
+    "type": "float"
+  },
+  "geolocation": {
+    "type": "geo_point"
+  },
+  "gridHierarchyId": {
+    "type": "long"
+  },
+  "grosssf": {
+    "type": "long"
+  },
+  "gym": {
+    "type": "boolean"
+  },
+  "hasImages": {
+    "type": "boolean"
+  },
+  "highRise": {
+    "type": "boolean"
+  },
+  "houseNumber": {
+    "type": "long"
+  },
+  "houseType": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "id": {
+    "type": "keyword"
+  },
+  "images": {
+    "properties": {
+      "floorplans": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "photos": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      }
+    }
+  },
+  "investments_keywords": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "investments_keywords_score": {
+    "type": "float"
+  },
+  "isHouse": {
+    "type": "boolean"
+  },
+  "isLatest": {
+    "type": "boolean"
+  },
+  "isLobbyAttended": {
+    "type": "boolean"
+  },
+  "isNewDevelopment": {
+    "type": "boolean"
+  },
+  "isShortTerm": {
+    "type": "boolean"
+  },
+  "landsf": {
+    "type": "long"
+  },
+  "last_reduction_date": {
+    "type": "date"
+  },
+  "laundry": {
+    "type": "boolean"
+  },
+  "line": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "link_to_invest_neighborhood": {
+    "type": "keyword"
+  },
+  "link_to_investments": {
+    "type": "keyword"
+  },
+  "listingDate": {
+    "type": "date"
+  },
+  "listingEntityId": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "listingId": {
+    "type": "long"
+  },
+  "listingIdentifier": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "listingType": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "lobby": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "loft": {
+    "type": "boolean"
+  },
+  "lot": {
+    "type": "long"
+  },
+  "lot_depth_score": {
+    "type": "float"
+  },
+  "lot_width_score": {
+    "type": "float"
+  },
+  "maintenance": {
+    "type": "float"
+  },
+  "monthlies_psf": {
+    "type": "float"
+  },
+  "monthlies_psf_score": {
+    "type": "float"
+  },
+  "monthly": {
+    "type": "long"
+  },
+  "neighborhoodGroup": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "neighborhoodId": {
+    "type": "long"
+  },
+  "neighborhoodName": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "neighborhoodOutputs": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "nextOpenHouseDate": {
+    "type": "date"
+  },
+  "nhd_upper_price_deviation": {
+    "type": "float"
+  },
+  "nhd_upper_psf_deviation": {
+    "type": "long"
+  },
+  "nhd_upper_size_deviation": {
+    "type": "long"
+  },
+  "number_of_reductions": {
+    "type": "long"
+  },
+  "number_of_reductions_score": {
+    "type": "float"
+  },
+  "objectID": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "openHouseDate1": {
+    "type": "date"
+  },
+  "openHouseDate2": {
+    "type": "date"
+  },
+  "openHouseDates": {
+    "properties": {
+      "date": {
+        "type": "long"
+      },
+      "timeRange": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      }
+    }
+  },
+  "openHouseTimeRange1": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "openHouseTimeRange2": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "outdoor": {
+    "type": "boolean"
+  },
+  "ownership": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "parkView": {
+    "type": "boolean"
+  },
+  "pets": {
+    "type": "boolean"
+  },
+  "pool": {
+    "type": "boolean"
+  },
+  "pool_score": {
+    "type": "float"
+  },
+  "premium": {
+    "type": "boolean"
+  },
+  "previously_converted": {
+    "type": "boolean"
+  },
+  "previously_converted_score": {
+    "type": "float"
+  },
+  "prewar": {
+    "type": "boolean"
+  },
+  "price": {
+    "type": "long"
+  },
+  "priceChange": {
+    "type": "float"
+  },
+  "priceChangePct": {
+    "type": "float"
+  },
+  "pricePerSize": {
+    "type": "float"
+  },
+  "price_change_score": {
+    "type": "float"
+  },
+  "price_purchase_deviation": {
+    "type": "float"
+  },
+  "price_purchase_deviation_score": {
+    "type": "float"
+  },
+  "price_score": {
+    "type": "float"
+  },
+  "price_upper_deviation": {
+    "type": "float"
+  },
+  "primaryAddressId": {
+    "type": "long"
+  },
+  "psf_score": {
+    "type": "float"
+  },
+  "psf_upper_deviation": {
+    "type": "float"
+  },
+  "reporter_link": {
+    "type": "keyword"
+  },
+  "riverView": {
+    "type": "boolean"
+  },
+  "roofGarden": {
+    "type": "boolean"
+  },
+  "rooms": {
+    "type": "float"
+  },
+  "score_sum": {
+    "type": "float"
+  },
+  "score_sum_fields": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "size": {
+    "type": "long"
+  },
+  "size_upper_deviation": {
+    "type": "float"
+  },
+  "status": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "statusWeight": {
+    "type": "long"
+  },
+  "storageArea": {
+    "type": "long"
+  },
+  "street": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "streetEntityId": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "target_confidence_level": {
+    "type": "long"
+  },
+  "target_multiple": {
+    "type": "float"
+  },
+  "target_sale_price": {
+    "type": "float"
+  },
+  "tax": {
+    "type": "float"
+  },
+  "unit": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "units": {
+    "type": "long"
+  },
+  "unitsTotal": {
+    "type": "long"
+  },
+  "updatedAt": {
+    "type": "date",
+    "format": "YYYY-MM-dd HH:mm:ss"
+  },
+  "upper_baths": {
+    "type": "float"
+  },
+  "upper_beds": {
+    "type": "float"
+  },
+  "url": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "utility": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "washerDryer": {
+    "type": "boolean"
+  },
+  "yearBuilt": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  },
+  "zipCode": {
+    "type": "text",
+    "fields": {
+      "keyword": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  }
+}

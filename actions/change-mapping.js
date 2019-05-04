@@ -2,22 +2,8 @@ const ElasticService = require("../elasticService");
 
 const mandatoryFields = { host: "host", aliasName: "--alias-name" };
 
-const action = (program) => {
-  if (program.outputMapping && program.inputMapping) {
-    console.error(`Can't specify both --output-mapping and --input-mapping`);
-    process.exit(1);
-  }
-  if (!program.outputMapping && !program.inputMapping) {
-    console.error(`Need to specify either --output-mapping or --input-mapping`);
-    process.exit(1);
-  }
-
-  Object.keys(mandatoryFields).forEach(field => {
-    if (program[field] === undefined) {
-      console.error(`'${mandatoryFields[field]}' must be specified`);
-      process.exit(1);
-    }
-  });
+const action = program => {
+  validate(program);
 
   const {
     host,
@@ -36,13 +22,41 @@ const action = (program) => {
   };
 
   const logger = { log: (...rest) => !outputMapping && console.log(...rest) };
+  logger.log(`\nOptions chosen:`);
   logger.log(options);
+  logger.log();
 
   // If we're going to print out the mapping, only non-error messages should be logged;
   options.logger = logger;
-  const elasticService = new ElasticService(options);
+  runChangeMapping(options)
+};
 
-  elasticService.changeMapping().catch(console.error);
+async function runChangeMapping(options) {
+  try {
+    const elasticService = new ElasticService(options);
+    await elasticService.changeMapping()
+  } catch (error) {
+    console.error(error.message)
+    process.exit(1);
+  }
+}
+
+const validate = program => {
+  Object.keys(mandatoryFields).forEach(field => {
+    if (program[field] === undefined) {
+      console.error(`Missing argument: '${mandatoryFields[field]}'`);
+      process.exit(1);
+    }
+  });
+
+  if (program.outputMapping && program.inputMapping) {
+    console.error(`Can't specify both --output-mapping and --input-mapping`);
+    process.exit(1);
+  }
+  if (!program.outputMapping && !program.inputMapping) {
+    console.error(`Need to specify either --output-mapping or --input-mapping`);
+    process.exit(1);
+  }
 };
 
 const help = () => {
@@ -75,9 +89,29 @@ const help = () => {
   console.log(
     "  $ elastic change-mapping -h http://localhost:9200 -a my-index-alias -i ./new-mapping.json"
   );
-}
-
-module.exports = {
-  action,
-  help
 };
+const applyAction = program => {
+  program
+    .command("change-mapping")
+    .description("Change the mapping of an index (by alias name)")
+    .alias("cm")
+    .option("-h, --host <host>")
+    .option("-a, --alias-name <alias>")
+    .option(
+      "-t, --document-type [document-type]",
+      "The document_type of the index you want to change the mapping of",
+      "doc"
+    )
+    .option(
+      "-i, --input-mapping [input-mapping]",
+      "A path to a (JSON) file containing the new mapping"
+    )
+    .option(
+      "-o, --output-mapping",
+      "Output the current index mapping (and exit without any changes)"
+    )
+    .on("--help", help)
+    .action(action);
+  return program;
+};
+module.exports = applyAction;
