@@ -1,0 +1,31 @@
+{
+  "name": "elastic-utils",
+  "version": "0.0.1",
+  "description": "Elasticsearch maintenance command line utility",
+  "main": "elastic-utils",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "elastic-utils": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Eli-Goldberg/elastic-utils.git"
+  },
+  "keywords": [
+    "elaticsearch",
+    "elatic",
+    "cli"
+  ],
+  "author": "Eli Goldberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Eli-Goldberg/elastic-utils/issues"
+  },
+  "homepage": "https://github.com/Eli-Goldberg/elastic-utils/#README.md",
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.0.0-rc.2",
+    "commander": "~2.8.1"
+  }
+}
